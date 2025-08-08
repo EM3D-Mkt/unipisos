@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>UNIPISOS | Pisos Industriais em Belo Horizonte</title>
+  <meta name="description" content="Pisos industriais de alta resistência em BH. Resinagem epóxi, polimento de concreto e acabamentos personalizados. Orçamento gratuito até 50 km.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; background: #f9f9f9; }
+    header { background: #111; color: white; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; }
+    .cta-btn, .whatsapp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #d62828;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .whatsapp-btn { background-color: #25D366; margin-left: 10px; }
+    section { padding: 40px 20px; max-width: 1200px; margin: auto; }
+    .features, .testimonials { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+    form { display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: auto; }
+    input, textarea { padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+    footer { background: #222; color: white; text-align: center; padding: 30px 20px; }
+
+    /* Carousel */
+    .carousel-container {
+      position: relative;
+      max-width: 800px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel img {
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #d62828;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Pisos Industriais de Alta Resistência em BH</h1>
+  <p>Resinagem Epóxi, Polimento de Concreto e Acabamentos Técnicos Personalizados.</p>
+  <a href="#formulario" class="cta-btn">Solicite Orçamento Grátis</a>
+  <a href="https://wa.me/5531982803144" class="whatsapp-btn" target="_blank">Fale no WhatsApp</a>
+</header>
+
+<section>
+  <h2>Por que escolher a UNIPISOS?</h2>
+  <div class="features">
+    <div class="card"><strong>Inovação Técnica</strong><p>Resinas epóxi, ucret, camuscado e muito mais. Aplicações com tecnologia de ponta.</p></div>
+    <div class="card"><strong>Confiança de Grandes Marcas</strong><p>Fiat, Audi, UOL, Petronas, Supermercados BH, Verdemar já confiam em nós.</p></div>
+    <div class="card"><strong>Atendimento Ágil e Abrangente</strong><p>Orçamentos gratuitos em até 50 km. Atendimento sob demanda.</p></div>
+    <div class="card"><strong>Durabilidade e Segurança</strong><p>Acabamentos duráveis para grandes oficinas, ginásios, transportadoras e mais.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Veja Nossos Projetos</h2>
+  <div class="carousel-container">
+    <div class="carousel">
+      <img src="https://via.placeholder.com/800x400?text=Piso+Industrial+1" alt="Piso Industrial 1">
+      <img src="https://via.placeholder.com/800x400?text=Polimento+de+Concreto" alt="Polimento de Concreto">
+      <img src="https://via.placeholder.com/800x400?text=Resinagem+Epoxi+em+Galpão" alt="Resinagem Epóxi">
+    </div>
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</section>
+
+<section>
+  <h2>O que dizem nossos clientes</h2>
+  <div class="testimonials">
+    <div class="card">“Contratamos a UNIPISOS para revitalizar o chão da fábrica da Fiat. Atendimento técnico impecável e entrega rápida.” – Gerente, Fiat Brasil</div>
+    <div class="card">“A durabilidade do piso em nossa loja foi além do esperado. Sem dúvida, recomendaria para empresas de grande porte.” – Diretor, Supermercado Verdemar</div>
+  </div>
+</section>
+
+<section id="formulario">
+  <h2>Solicite uma Proposta Técnica Personalizada</h2>
+  <form>
+    <input type="text" placeholder="Seu Nome" required>
+    <input type="text" placeholder="Empresa / Setor" required>
+    <input type="email" placeholder="Seu Email" required>
+    <input type="tel" placeholder="Telefone" required>
+    <textarea placeholder="Tipo de serviço desejado (ex: piso epóxi, polido...)" required></textarea>
+    <button type="submit" class="cta-btn">Receber Orçamento</button>
+    <a href="https://wa.me/5531982803144" class="whatsapp-btn" target="_blank">Preferir WhatsApp? Clique aqui</a>
+  </form>
+</section>
+
+<footer>
+  <p>UNIPISOS - Rua da Paz, 71 – São Genaro, Ribeirão das Neves – MG</p>
+  <p>Telefone: (31) 9 8280‑3144 | Atendimento Técnico conforme normas</p>
+</footer>
+
+<script>
+const carousel = document.querySelector('.carousel');
+const images = document.querySelectorAll('.carousel img');
+const totalImages = images.length;
+let index = 0;
+
+document.querySelector('.next').addEventListener('click', () => {
+  index = (index + 1) % totalImages;
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+  index = (index - 1 + totalImages) % totalImages;
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+});
+</script>
+
+</body>
+</html>
